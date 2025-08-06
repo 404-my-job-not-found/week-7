@@ -1,8 +1,5 @@
 var groupAnagrams = function (strs) {
   const sortedStrs = new Map();
-  const result = [];
-
-  strs.sort();
 
   strs.forEach((str) => {
     const sortedStr = str.split('').sort().join('');
@@ -14,9 +11,5 @@ var groupAnagrams = function (strs) {
     }
   });
 
-  sortedStrs.forEach((value) => {
-    result.push(value);
-  });
-
-  return result.sort((a, b) => a.length - b.length);
+  return Array.from(sortedStrs.values());
 };
