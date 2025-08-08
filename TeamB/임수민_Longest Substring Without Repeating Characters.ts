@@ -1,5 +1,8 @@
 // 첫 번째 시도
 
+// 처음엔 의식의 흐름대로 풀어봤는데, 왼쪽(i)과 오른쪽(i+1)을 비교하고 만약에 중복이 아니라면 왼쪽은 그대로 두고 오른쪽만 ++ 해준뒤 count를 올리고,
+// 중복이라면 left 값을 right로 치환하고 다시 right로 비교하면서 count는 초기화하는 식으로 투포인터를 사용하여 작성해봤는데,  아무래도 중복되는 글자가 붙어서 나오지 않는다면 이 방식은 될거 같지가 않았습니다.
+
 // function lengthOfLongestSubstring(s: string): number {
 //   let count: number = 1;
 //   let left: number = 0;
